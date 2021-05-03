@@ -1,6 +1,7 @@
 # Image-classification-using-CNN-Convolutional-Neural-Network-
 
-Dataset¶
+Dataset
+
 Fashion-MNIST is a dataset of Zalando's article images—consisting of a training set of 60,000 examples and a test set of 10,000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes. Zalando intends Fashion-MNIST to serve as a direct drop-in replacement for the original MNIST dataset for benchmarking machine learning algorithms. It shares the same image size and structure of training and testing splits.
 
 Content
@@ -12,8 +13,10 @@ The training and test data sets have 785 columns.
 The first column consists of the class labels (see above), and represents the article of clothing.
 The rest of 784 columns (1-785) contain the pixel-values of the associated image.
 
-Read the data¶
+Read the data
+
 There are 10 different classes of images, as following:
+
 •	0: T-shirt/top;
 •	1: Trouser;
 •	2: Pullover;
@@ -24,26 +27,38 @@ There are 10 different classes of images, as following:
 •	7: Sneaker;
 •	8: Bag;
 •	9: Ankle boot.
+
 Image dimensions are 28x28.
 
 
 Train the model
+
 Build the model
+
 We used a Sequential(CNN) model.
 
 •	The Sequential model is a linear stack of layers. It can be first initialized and then we add layers using add method or we can add all layers at initial stage. The layers added are as follows:
 •	Conv2D is a 2D Convolutional layer (i.e. spatial convolution over images). The parameters used are:
+
 	filters - the number of filters (Kernels) used with this layer; here filters = 32;
+
 	kernel_size - the dimmension of the Kernel: (3 x 3);
+
 	activation - is the activation function used, in this case relu;
+
 	kernel_initializer - the function used for initializing the kernel;
+
 	input_shape - is the shape of the image presented to the CNN: in our case is 28 x 28 The input and output of the Conv2D is a 4D tensor.
+
 •	MaxPooling2D is a Max pooling operation for spatial data. Parameters used here are:
+
 	pool_size, in this case (2,2), representing the factors by which to downscale in both directions;
+
 	Conv2D with the following parameters:
 	filters: 64;
 	kernel_size : (3 x 3);
 	activation : relu;
+
 •	Conv2D with the following parameters:
 	filters: 128;
 	kernel_size : (3 x 3);
