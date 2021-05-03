@@ -88,10 +88,13 @@ The last layer is a 10-node softmax layer that returns an array of 10 probabilit
 Because we are dealing with the classification problem, the final layer uses softmax activation to get class probabilities. As class probabilities follow a certain distribution, cross-entropy indicates the distance from networks preferred distribution.
 
 Then we compile the model, specifying as well the following parameters:
+
 •	loss;
 •	optimizer;
 •	metrics.
+
 •	After adding the Dropout layers, the validation accuracy and validation loss are much better. 
+
 Two plots which illustrate the accuracy / loss of training and validation over the time:
 
 
