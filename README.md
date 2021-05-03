@@ -95,10 +95,10 @@ Then we compile the model, specifying as well the following parameters:
 
 •	After adding the Dropout layers, the validation accuracy and validation loss are much better. 
 
-Two plots which illustrate the accuracy / loss of training and validation over the time:
+Three plots with different ephocs which illustrate the accuracy / loss of training and validation over the time:
 
-![alt text](https://github.com/Sadvisandhya/Image-classification-using-CNN-Convolutional-Neural-Network-/blob/main/mod_acc_1.png?raw=true)
 ![alt text](https://github.com/Sadvisandhya/Image-classification-using-CNN-Convolutional-Neural-Network-/blob/main/mod_acc_2.png?raw=true)
+![alt text](https://github.com/Sadvisandhya/Image-classification-using-CNN-Convolutional-Neural-Network-/blob/main/mod_acc_1.png?raw=true)
 ![alt text](https://github.com/Sadvisandhya/Image-classification-using-CNN-Convolutional-Neural-Network-/blob/main/mod_acc_3.png?raw=true)
 
 Conclusions
