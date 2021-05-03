@@ -96,7 +96,7 @@ Then we compile the model, specifying as well the following parameters:
 •	After adding the Dropout layers, the validation accuracy and validation loss are much better. 
 
 Two plots which illustrate the accuracy / loss of training and validation over the time:
-
+https://github.com/Sadvisandhya/Image-classification-using-CNN-Convolutional-Neural-Network-/blob/main/mod_acc_1.png
 
 Conclusions
 With a complex sequential model with multiple convolution layers and 40 epochs for the training, we obtained an accuracy 0.937 for test prediction. We trained the model with Dropout layers to reduce overfitting.
